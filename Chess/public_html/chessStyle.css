@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 27, 2015, 11:42:09 PM
+    Author     : Craig
+*/
+#chessBoard{
+    margin-right: auto;
+    margin-left: auto;
+}
+#chessBoard td {
+    height: 80px;
+    width: 80px;
+    border: solid;
+    background: black;
+    text-align: center;
+   
+
+    
+}
+#chessBoard tr:nth-child(odd) td:nth-child(even),
+#chessBoard tr:nth-child(even) td:nth-child(odd){
+    background:  white;
+}
