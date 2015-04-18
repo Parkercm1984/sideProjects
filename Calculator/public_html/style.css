@@ -1,0 +1,32 @@
+/*
+Program: Basic calculator program 
+Programmer: Craig Parker
+*/
+
+
+
+#calculator{
+  background-color: lightskyblue;
+  width: 275px;
+  margin-right: auto;
+  margin-left: auto;
+    
+}
+
+.operations{
+  display: inline-block;  
+  padding: 20px;
+    
+}
+.calcNumbers{
+  display: inline-block;  
+  padding: 20px;
+    
+    
+}
+#zeroButton{
+ padding: 20px;
+ width: 150px;
+     
+    
+}
