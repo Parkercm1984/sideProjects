@@ -7,7 +7,8 @@ Programmer: Craig Parker
 
 #calculator{
   background-color: lightskyblue;
-  width: 275px;
+  width: 300px;
+  height: 325px;
   margin-right: auto;
   margin-left: auto;
     
@@ -16,6 +17,7 @@ Programmer: Craig Parker
 .operations{
   display: inline-block;  
   padding: 20px;
+  width: 51px;
     
 }
 .calcNumbers{
@@ -26,7 +28,25 @@ Programmer: Craig Parker
 }
 #zeroButton{
  padding: 20px;
- width: 150px;
+ width: 106px;
      
     
+}
+#container1{
+    width: 213px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.container2{
+    float: left;
+}
+
+#addition{
+    height: 150px;
+ 
+}
+#enter{
+    height: 145px;
+    width: 52px;
+   
 }
