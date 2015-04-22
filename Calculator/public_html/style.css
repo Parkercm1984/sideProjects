@@ -8,12 +8,17 @@ Programmer: Craig Parker
 #calculator{
   background-color: lightskyblue;
   width: 300px;
-  height: 325px;
+  height: 360px;
   margin-right: auto;
   margin-left: auto;
     
 }
-
+#calcOutput{
+    height: 50px;
+    width: 212px;
+    text-align: right;
+    font-size: 35px;
+}
 .operations{
   display: inline-block;  
   padding: 20px;
@@ -29,16 +34,18 @@ Programmer: Craig Parker
 #zeroButton{
  padding: 20px;
  width: 106px;
+ vertical-align: top;
      
     
 }
 #container1{
-    width: 213px;
+    width: 225px;
    margin-left: auto;
    margin-right: auto;
 }
 .container2{
     float: left;
+    padding: 2px;
 }
 
 #addition{
@@ -49,4 +56,8 @@ Programmer: Craig Parker
     height: 145px;
     width: 52px;
    
+}
+#decimal{
+    font-size: 20px;
+    height: 59px;
 }
