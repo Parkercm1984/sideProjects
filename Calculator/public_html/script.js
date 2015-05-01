@@ -3,18 +3,38 @@ Program: Basic calculator program
 Programmer: Craig Parker
  */
 
+//global Var
+var additionStorage;
 
 
-
-function numberInput(){
+//functions
+function numberInput(thisObj){
     var prevOutput = "";
-    var newOutput = "1";
+    var newOutput = thisObj.innerHTML;
             
     prevOutput = document.getElementById("calcOutput").value;
     if (prevOutput === "0"){
-     document.getElementById("calcOutput").value = newOutput; 
+        document.getElementById("calcOutput").value = newOutput; 
     }
     else{
-    document.getElementById("calcOutput").value = prevOutput + newOutput ;
+        document.getElementById("calcOutput").value = prevOutput + newOutput ;
     }
+};
+
+function additionOperation(){
+    var numToAdd;
+  
+    if (additionStorage === undefined){
+        additionStorage = document.getElementById("calcOutput").value;
+        document.getElementById("calcOutput").value = "0";
+    }
+    else {
+        
+        numToAdd = document.getElementById("calcOutput").value;
+        document.getElementById("calcOutput").value = parseFloat(numToAdd) + 
+                parseFloat(additionStorage);
+        additionStorage= undefined;
+    }
+  
+    
 };
