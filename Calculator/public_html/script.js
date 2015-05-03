@@ -5,15 +5,20 @@ Programmer: Craig Parker
 
 //global Var
 var additionStorage;
+var operatorTest = false;
 
 
 //functions
 function numberInput(thisObj){
     var prevOutput = "";
     var newOutput = thisObj.innerHTML;
-            
+    
+    if (operatorTest === true){
+        document.getElementById("calcOutput").value = "";
+        operatorTest = false;
+    }
     prevOutput = document.getElementById("calcOutput").value;
-    if (prevOutput === "0"){
+    if (prevOutput === ""){
         document.getElementById("calcOutput").value = newOutput; 
     }
     else{
@@ -26,14 +31,15 @@ function additionOperation(){
   
     if (additionStorage === undefined){
         additionStorage = document.getElementById("calcOutput").value;
-        document.getElementById("calcOutput").value = "0";
+        operatorTest = true;
     }
     else {
         
         numToAdd = document.getElementById("calcOutput").value;
         document.getElementById("calcOutput").value = parseFloat(numToAdd) + 
                 parseFloat(additionStorage);
-        additionStorage= undefined;
+        additionStorage= document.getElementById("calcOutput").value;
+        operatorTest = true;
     }
   
     
