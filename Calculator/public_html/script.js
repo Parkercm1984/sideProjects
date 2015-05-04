@@ -4,7 +4,7 @@ Programmer: Craig Parker
  */
 
 //global Var
-var additionStorage;
+var numStorage, prevOperation;
 var operatorTest = false;
 
 
@@ -26,21 +26,62 @@ function numberInput(thisObj){
     }
 };
 
-function additionOperation(){
-    var numToAdd;
-  
-    if (additionStorage === undefined){
-        additionStorage = document.getElementById("calcOutput").value;
-        operatorTest = true;
-    }
-    else {
-        
-        numToAdd = document.getElementById("calcOutput").value;
-        document.getElementById("calcOutput").value = parseFloat(numToAdd) + 
-                parseFloat(additionStorage);
-        additionStorage= document.getElementById("calcOutput").value;
-        operatorTest = true;
-    }
-  
+
+function operation(thisOperator){
+    var newOperator = thisOperator.innerHTML;   
+    var numToOperateOn;
     
-};
+    if (prevOperation === undefined){
+        prevOperation = thisOperator.innerHTML;
+        numStorage = document.getElementById("calcOutput").value;
+        operatorTest = true;
+    }
+    else{
+    
+    switch(prevOperation){
+        
+        case "+":
+            numToOperateOn = document.getElementById("calcOutput").value;
+            document.getElementById("calcOutput").value = parseFloat(numStorage) + 
+                parseFloat(numToOperateOn);
+            numStorage= document.getElementById("calcOutput").value;
+            operatorTest = true;
+            prevOperation = newOperator;
+        break;    
+            
+        case "-":
+            numToOperateOn = document.getElementById("calcOutput").value;
+            document.getElementById("calcOutput").value = parseFloat(numStorage) - 
+                parseFloat(numToOperateOn);
+            numStorage= document.getElementById("calcOutput").value;
+            operatorTest = true;
+            prevOperation = newOperator;
+            break;
+        
+        case "*":
+           numToOperateOn = document.getElementById("calcOutput").value;
+            document.getElementById("calcOutput").value = parseFloat(numStorage) * 
+                parseFloat(numToOperateOn);
+            numStorage= document.getElementById("calcOutput").value;
+            operatorTest = true;
+            prevOperation = newOperator;
+            break;
+        
+        case "/":
+            numToOperateOn = document.getElementById("calcOutput").value;
+            document.getElementById("calcOutput").value = parseFloat(numStorage) / 
+                    parseFloat(numToOperateOn);
+            numStorage= document.getElementById("calcOutput").value;
+            operatorTest = true;
+            prevOperation = newOperator;
+            break;  
+        case "Enter":
+            numStorage= document.getElementById("calcOutput").value;
+            prevOperation = newOperator;
+            operatorTest = true;
+            break;
+    }
+        
+    }  
+   
+}

@@ -18,9 +18,9 @@ Programmer: Craig Parker
                 <input type="text" id="calcOutput" name="calcOutput" value="" /> 
                 <div class="container2"> 
                     <div>
-                        <button class="operations" id="division">/</button>
-                        <button class="operations" id="multiplication">*</button>
-                        <button class="operations" id="subtraction">-</button>
+                        <button onclick="operation(this)"class="operations" id="division">/</button>
+                        <button onclick="operation(this)" class="operations" id="multiplication">*</button>
+                        <button onclick="operation(this)" class="operations" id="subtraction">-</button>
                     </div>
                     <div>
                         <button onclick="numberInput(this)" class="calcNumbers">7</button>
@@ -44,10 +44,10 @@ Programmer: Craig Parker
                 </div>    
                 <div class="container2">
                     <div>
-                        <button onclick="additionOperation()" class="operations" id="addition">+</button>
+                        <button onclick="operation(this)" class="operations" id="addition">+</button>
                     </div>
                     <div>
-                    <button id="enter">Enter</button>
+                    <button onclick="operation(this)" id="enter">Enter</button>
                     </div>
                 </div>
             </div>    
