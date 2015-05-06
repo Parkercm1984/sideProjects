@@ -4,7 +4,9 @@ Programmer: Craig Parker
 */
 
 
-
+#addition{
+    height: 150px; 
+}
 #calculator{
   background-color: lightskyblue;
   width: 300px;
@@ -13,30 +15,15 @@ Programmer: Craig Parker
   margin-left: auto;
     
 }
+.calcNumbers{
+  display: inline-block;  
+  padding: 20px; 
+}
 #calcOutput{
     height: 50px;
     width: 212px;
     text-align: right;
     font-size: 35px;
-}
-.operations{
-  display: inline-block;  
-  padding: 20px;
-  width: 51px;
-    
-}
-.calcNumbers{
-  display: inline-block;  
-  padding: 20px;
-    
-    
-}
-#zeroButton{
- padding: 20px;
- width: 106px;
- vertical-align: top;
-     
-    
 }
 #container1{
     width: 225px;
@@ -47,17 +34,26 @@ Programmer: Craig Parker
     float: left;
     padding: 2px;
 }
-
-#addition{
-    height: 150px;
- 
-}
-#enter{
-    height: 145px;
-    width: 52px;
-   
-}
 #decimal{
     font-size: 20px;
     height: 59px;
 }
+#enter{
+    height: 145px;
+    width: 52px;   
+}
+.operations{
+  display: inline-block;  
+  padding: 20px;
+  width: 51px;    
+}
+#zeroButton{
+ padding: 20px;
+ width: 106px;
+ vertical-align: top;    
+}
+
+
+
+
+

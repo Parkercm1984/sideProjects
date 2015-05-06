@@ -38,49 +38,49 @@ function operation(thisOperator){
     }
     else{
     
-    switch(prevOperation){
-        
-        case "+":
-            numToOperateOn = document.getElementById("calcOutput").value;
-            document.getElementById("calcOutput").value = parseFloat(numStorage) + 
-                parseFloat(numToOperateOn);
-            numStorage= document.getElementById("calcOutput").value;
-            operatorTest = true;
-            prevOperation = newOperator;
-        break;    
-            
-        case "-":
-            numToOperateOn = document.getElementById("calcOutput").value;
-            document.getElementById("calcOutput").value = parseFloat(numStorage) - 
-                parseFloat(numToOperateOn);
-            numStorage= document.getElementById("calcOutput").value;
-            operatorTest = true;
-            prevOperation = newOperator;
-            break;
-        
-        case "*":
-           numToOperateOn = document.getElementById("calcOutput").value;
-            document.getElementById("calcOutput").value = parseFloat(numStorage) * 
-                parseFloat(numToOperateOn);
-            numStorage= document.getElementById("calcOutput").value;
-            operatorTest = true;
-            prevOperation = newOperator;
-            break;
-        
-        case "/":
-            numToOperateOn = document.getElementById("calcOutput").value;
-            document.getElementById("calcOutput").value = parseFloat(numStorage) / 
+        switch(prevOperation){
+
+            case "+":
+                numToOperateOn = document.getElementById("calcOutput").value;
+                document.getElementById("calcOutput").value = parseFloat(numStorage) + 
                     parseFloat(numToOperateOn);
-            numStorage= document.getElementById("calcOutput").value;
-            operatorTest = true;
-            prevOperation = newOperator;
-            break;  
-        case "Enter":
-            numStorage= document.getElementById("calcOutput").value;
-            prevOperation = newOperator;
-            operatorTest = true;
-            break;
-    }
+                numStorage= document.getElementById("calcOutput").value;
+                operatorTest = true;
+                prevOperation = newOperator;
+            break;    
+
+            case "-":
+                numToOperateOn = document.getElementById("calcOutput").value;
+                document.getElementById("calcOutput").value = parseFloat(numStorage) - 
+                    parseFloat(numToOperateOn);
+                numStorage= document.getElementById("calcOutput").value;
+                operatorTest = true;
+                prevOperation = newOperator;
+                break;
+
+            case "*":
+               numToOperateOn = document.getElementById("calcOutput").value;
+                document.getElementById("calcOutput").value = parseFloat(numStorage) * 
+                    parseFloat(numToOperateOn);
+                numStorage= document.getElementById("calcOutput").value;
+                operatorTest = true;
+                prevOperation = newOperator;
+                break;
+
+            case "/":
+                numToOperateOn = document.getElementById("calcOutput").value;
+                document.getElementById("calcOutput").value = parseFloat(numStorage) / 
+                        parseFloat(numToOperateOn);
+                numStorage= document.getElementById("calcOutput").value;
+                operatorTest = true;
+                prevOperation = newOperator;
+                break;  
+            case "Enter":
+                numStorage= document.getElementById("calcOutput").value;
+                prevOperation = newOperator;
+                operatorTest = true;
+                break;
+        }
         
     }  
    
