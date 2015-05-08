@@ -9,48 +9,55 @@ Programmer: Craig Parker
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
                 
     </head>
     <body>
         <div id="calculator">
             <div id="container1">    
                 <input type="text" id="calcOutput" name="calcOutput" value="" /> 
+                <div class="container2">
+                    <button class="calcUtility" id="clear">Clear</button>
+                    <button class="calcUtility">MS</button>
+                    <button class="calcUtility">MR</button>
+                    <button class="calcUtility">MC</button>                        
+                </div>
                 <div class="container2"> 
                     <div>
-                        <button onclick="operation(this)"class="operations" id="division">/</button>
-                        <button onclick="operation(this)" class="operations" id="multiplication">*</button>
-                        <button onclick="operation(this)" class="operations" id="subtraction">-</button>
+                        <button  class="operations" id="division">/</button>
+                        <button  class="operations" id="multiplication">*</button>
+                        <button  class="operations" id="subtraction">-</button>
                     </div>
                     <div>
-                        <button onclick="numberInput(this)" class="calcNumbers">7</button>
-                        <button onclick="numberInput(this)" class="calcNumbers">8</button>
-                        <button onclick="numberInput(this)" class="calcNumbers">9</button>
+                        <button  class="calcNumbers">7</button>
+                        <button  class="calcNumbers">8</button>
+                        <button  class="calcNumbers">9</button>
                     </div>
                     <div>
-                        <button onclick="numberInput(this)" class="calcNumbers">4</button>
-                        <button onclick="numberInput(this)" class="calcNumbers">5</button>
-                        <button onclick="numberInput(this)" class="calcNumbers">6</button>
+                        <button  class="calcNumbers">4</button>
+                        <button  class="calcNumbers">5</button>
+                        <button  class="calcNumbers">6</button>
                     </div>
                     <div>
-                        <button onclick="numberInput(this)" class="calcNumbers">1</button>
-                        <button onclick="numberInput(this)" class="calcNumbers">2</button>
-                        <button onclick="numberInput(this)" class="calcNumbers">3</button>
+                        <button  class="calcNumbers">1</button>
+                        <button  class="calcNumbers">2</button>
+                        <button  class="calcNumbers">3</button>
                     </div>
                     <div>
-                    <button onclick="numberInput(this)" id="zeroButton">0</button>
-                    <button onclick="numberInput(this)" id="decimal" class="operations">.</button>
+                    <button  id="zeroButton" class="calcNumbers">0</button>
+                    <button  id="decimal" class="calcNumbers">.</button>
                     </div>
                 </div>    
                 <div class="container2">
                     <div>
-                        <button onclick="operation(this)" class="operations" id="addition">+</button>
+                        <button  class="operations" id="addition">+</button>
                     </div>
                     <div>
-                    <button onclick="operation(this)" id="enter">Enter</button>
+                        <button class="operations" id="enter">Enter</button>
                     </div>
-                </div>
+                </div>                
             </div>    
         </div>
+    <script type="text/javascript" src="script.js"></script>    
     </body>
 </html>

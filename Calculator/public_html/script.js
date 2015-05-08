@@ -9,9 +9,9 @@ var operatorTest = false;
 
 
 //functions
-function numberInput(thisObj){
+function numberToInput(currentNumber){
     var prevOutput = "";
-    var newOutput = thisObj.innerHTML;
+    var newOutput = currentNumber;
     
     if (operatorTest === true){
         document.getElementById("calcOutput").value = "";
@@ -27,12 +27,12 @@ function numberInput(thisObj){
 };
 
 
-function operation(thisOperator){
-    var newOperator = thisOperator.innerHTML;   
+function operationToExecute(currentOperation){
+    var newOperator = currentOperation;   
     var numToOperateOn;
     
     if (prevOperation === undefined){
-        prevOperation = thisOperator.innerHTML;
+        prevOperation = currentOperation;
         numStorage = document.getElementById("calcOutput").value;
         operatorTest = true;
     }
@@ -85,3 +85,17 @@ function operation(thisOperator){
     }  
    
 }
+//event listeners
+$(".calcNumbers").click(function(){
+    var currentNumber = this.innerHTML;
+    numberToInput(currentNumber);
+});
+
+$(".calcUtility").click(function(){
+   alert("Hello!" + this.innerHTML); 
+});
+
+$(".operations").click(function(){
+    var currentOperation = this.innerHTML;
+    operationToExecute(currentOperation);
+});
