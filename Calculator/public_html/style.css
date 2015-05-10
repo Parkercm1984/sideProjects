@@ -13,11 +13,19 @@ Programmer: Craig Parker
   height: 425px;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 8px;
     
+}
+.calcMemory{
+  display: inline-block;  
+  height: 59px;
+  width: 51px;
+  border-radius: 8px;
 }
 .calcNumbers{
   display: inline-block;  
-  padding: 20px; 
+  padding: 20px;
+  border-radius: 8px;
 }
 #calcOutput{
     height: 50px;
@@ -26,10 +34,14 @@ Programmer: Craig Parker
     font-size: 35px;
 }
 #clear{
-    background-color:tomato; 
+  display: inline-block;  
+  height: 59px;
+  width: 51px;
+  background-color: #e12828;
+  border-radius: 8px;
 }
 #container1{
-    width: 225px;
+   width: 225px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -45,17 +57,15 @@ Programmer: Craig Parker
     height: 145px;
     width: 52px; 
     padding: 0px;
+    border-radius: 8px;
 }
 .operations{
   display: inline-block;  
   padding: 20px;
-  width: 51px;    
-}
-.calcUtility{
-  display: inline-block;  
-  height: 59px;
   width: 51px;
+  border-radius: 8px;
 }
+
 #zeroButton{
  padding: 20px;
  width: 106px;

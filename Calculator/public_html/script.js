@@ -4,7 +4,7 @@ Programmer: Craig Parker
  */
 
 //global Var
-var numStorage, prevOperation;
+var numStorage, prevOperation, calcMemory;
 var operatorTest = false;
 
 
@@ -84,18 +84,50 @@ function operationToExecute(currentOperation){
         
     }  
    
-}
+};//End operationToExecute function
+function clearInput(){
+    document.getElementById("calcOutput").value = "";
+};
+function saveToMemory(){
+    calcMemory = document.getElementById("calcOutput").value;
+};
+    
+function recallFromMemory(){
+    if (calcMemory !== undefined){
+       document.getElementById("calcOutput").value = calcMemory; 
+   }
+};
+
+function clearFromMemory(){
+    calcMemory = undefined;
+}; 
+
 //event listeners
-$(".calcNumbers").click(function(){
-    var currentNumber = this.innerHTML;
-    numberToInput(currentNumber);
-});
-
-$(".calcUtility").click(function(){
-   alert("Hello!" + this.innerHTML); 
-});
-
-$(".operations").click(function(){
-    var currentOperation = this.innerHTML;
-    operationToExecute(currentOperation);
+$(document).ready(function(){
+    
+    $(".calcNumbers").click(function(){
+        var currentNumber = this.innerHTML;
+        numberToInput(currentNumber);
+    });
+    
+    $("#clear").click(function(){
+        clearInput(); 
+    });
+    
+    $("#memoryClear").click(function(){
+        clearFromMemory();
+    });
+       
+    $("#memoryRecall").click(function(){
+        recallFromMemory();
+    });
+    
+    $("#memorySave").click(function(){
+        saveToMemory();
+    });
+    
+    $(".operations").click(function(){
+        var currentOperation = this.innerHTML;
+        operationToExecute(currentOperation);
+    });
 });
