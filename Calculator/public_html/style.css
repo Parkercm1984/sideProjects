@@ -65,21 +65,24 @@ Programmer: Craig Parker
     font-size: 20px;
     height: 59px;
 }
-#enter{
+#equals{
     height: 145px;
     width: 52px; 
     padding: 0px;
     border-radius: 8px;
+    font-size: 20px;
     background-color: #e6e6e6;
 }
-#enter:hover{
+#equals:hover{
     background-color: #d3d3d3; 
 }
 .operations{
   display: inline-block;  
   padding: 20px;
   width: 51px;
+  height: 59px;
   border-radius: 8px;
+  font-size: 20px;
   background-color: #e6e6e6;
 }
 .operations:hover{

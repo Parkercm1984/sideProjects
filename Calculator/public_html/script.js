@@ -75,7 +75,7 @@ function operationToExecute(currentOperation){
                 operatorTest = true;
                 prevOperation = newOperator;
                 break;  
-            case "Enter":
+            case "=":
                 numStorage= document.getElementById("calcOutput").value;
                 prevOperation = newOperator;
                 operatorTest = true;
