@@ -21,11 +21,19 @@ Programmer: Craig Parker
   height: 59px;
   width: 51px;
   border-radius: 8px;
+  background-color: #e6e6e6;
+}
+.calcMemory:hover{
+    background-color: #d3d3d3;  
 }
 .calcNumbers{
   display: inline-block;  
   padding: 20px;
   border-radius: 8px;
+  background-color: #e6e6e6;
+}
+.calcNumbers:hover{
+  background-color: #d3d3d3;   
 }
 #calcOutput{
     height: 50px;
@@ -40,6 +48,10 @@ Programmer: Craig Parker
   background-color: #e12828;
   border-radius: 8px;
 }
+#clear:hover{
+    background-color: #d70000;  
+}
+
 #container1{
    width: 225px;
    margin-left: auto;
@@ -58,18 +70,30 @@ Programmer: Craig Parker
     width: 52px; 
     padding: 0px;
     border-radius: 8px;
+    background-color: #e6e6e6;
+}
+#enter:hover{
+    background-color: #d3d3d3; 
 }
 .operations{
   display: inline-block;  
   padding: 20px;
   width: 51px;
   border-radius: 8px;
+  background-color: #e6e6e6;
+}
+.operations:hover{
+  background-color: #d3d3d3;   
 }
 
 #zeroButton{
  padding: 20px;
  width: 106px;
- vertical-align: top;    
+ vertical-align: top; 
+ background-color: #e6e6e6;
+}
+#zeroButton:hover{
+ background-color: #d3d3d3   
 }
 
 
